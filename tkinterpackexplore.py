@@ -1,0 +1,15 @@
+from tkinter import *
+root=Tk()
+root.title("My First window")
+
+btn1=Button(root,text="Button1",fg="red",bg="yellow",font=("Comic Sans Ms",15,"bold"))
+btn1.pack(side=TOP,fill=X)
+btn2=Button(root,text="Button2",fg="red",bg="yellow",font=("Comic Sans Ms",15,"bold"))
+btn2.pack(side=LEFT,fill=Y)
+btn3=Button(root,text="Button3",fg="red",bg="yellow",font=("Comic Sans Ms",15,"bold"))
+btn3.pack(side=RIGHT)
+btn4=Button(root,text="Button4",fg="red",bg="yellow",font=("Comic Sans Ms",15,"bold"))
+btn4.pack(side=BOTTOM,fill=X)
+root.geometry("400x500+400+100")
+root.resizable(0,0)
+root.mainloop()
